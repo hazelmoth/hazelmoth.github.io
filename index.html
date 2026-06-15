@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<title>hazel waddell | projects</title>
+<title>hazel | projects</title>
 
-<meta name="keywords" content=“102.9 hazel fm”>
+<meta name="keywords" content=“hazel”>
 <meta name=“description” content=“software engineer & 3d artist. experimenting with games and simulations.”>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,6 +29,20 @@
 
 <body class="dark">
 
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+  <defs>
+    <filter id="sparkle-coral">
+      <feFlood flood-color="#c4505a" result="c"/><feComposite in="c" in2="SourceAlpha" operator="in"/>
+    </filter>
+    <filter id="sparkle-mauve">
+      <feFlood flood-color="#ad91a3" result="c"/><feComposite in="c" in2="SourceAlpha" operator="in"/>
+    </filter>
+    <filter id="sparkle-blush">
+      <feFlood flood-color="#edaf97" result="c"/><feComposite in="c" in2="SourceAlpha" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+
 
 <section class="titlesection">
 	<div class="constrain-width">
@@ -39,12 +53,46 @@
 </section>
 
 <section class="team">
-  <div class="constrain-width inset lite team-card">
-    <p>Hiii! You've found my portfolio for jobs etc.</p>
-    <p>
-      I don't update it often, but you can get an idea of some things I've worked on.
-    </p>
-    <p></p>
+  <div class="constrain-width">
+    <div class="inset lite team-card">
+      <p>Hii! This is my portfolio for jobs etc. I sometimes make games and other things and put them here.</p>
+      <p>I don't update it often, but you can get an idea of what I've worked on.</p>
+      <br>
+      <div class="team-card-sections">
+
+        <div class="team-card-section">
+          <h4>education</h4>
+          <p>Bachelors in computer science</p>
+          <p>University of Washington Seattle</p>
+          <p>2019-2023</p>
+        </div>
+
+        <div class="team-card-section">
+          <h4>professional experience</h4>
+          <h5>Software Dev Engineer at Amazon.</h5>
+          <p>2023-present</p>
+          <h5>Software Engineer Intern at Amazon.</h5>
+          <p>Summer 2022</p>
+          <h5>Software Engineer Intern at Coupang.</h5>
+          <p>Summer 2021</p>
+        </div>
+
+        <div class="team-card-section">
+          <h4>technologies</h4>
+          <h5>
+            Android + Compose + Kotlin
+          </h5><p>2 years professional experience</p>
+          <h5>C# + Unity</h5>
+          <p>Used semi-regularly as a hobby for 13 years</p>
+          <h5>Blender</h5>
+          <p>i love blender <3</p>
+          <h5>
+            + varying experience with
+          </h5><p>Java, iOS/Swift, AWS CDK, NodeJS, javascript/typescript, HLSL</p>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
   
@@ -54,46 +102,116 @@
 
         <h2 class="lightheader">in active development</h2>
 
-        <a href="cfrpg/">
+        <article class="card-featured">
+          <div class="card-featured-body">
+            <h3>Dead Rabbit Salvage</h3>
+            <p>A co-op submarine crew roguelike.</p><br>
+            <p>This is a prototype in early stages of development. The current iteration has a functional game loop with multiplayer, physics-based vessel management.</p><br>
+            <p>Made in C# with Unity and the Fishnet networking framework. I also wrote some custom HLSL shaders.</p>
+
+          </div>
+          <div class="card-featured-image deadrabbit"></div>
+        </article>
+
+        <h2 class="lightheader">vrchat content</h2>
+
+        <article class="card-featured">
+          <div class="card-featured-body">
+            <h3>fripp cafe!</h3>
+            <p>a cute cafe.</p><br>
+            <p>this is my biggest 3d art project.</p><br>
+            <div class="card-featured-links">
+              <a href="https://vrchat.com/home/world/wrld_122b4d1e-6899-49d2-8d2e-b12eb8bd687e/info">see on VRChat (unlisted) →</a>
+            </div>
+          </div>
+          <div class="card-featured-image fripp"></div>
+        </article>
+        
+        <article class="card-featured">
+          <div class="card-featured-body">
+            <h3>synthesizer</h3>
+            <p>this was an experiment to make a fully modular synthesizer that runs on the GPU, on a shader inside vrchat.</p><br>
+            <p>so a lot of HLSL shader code.</p><br>
+            <div class="card-featured-links">
+              <a href="https://vrchat.com/home/world/wrld_d04843ac-0dd7-4f8c-b55f-66500abc1b22/info">see on VRChat (unlisted) →</a>
+            </div>
+          </div>
+          <div class="card-featured-image synth"></div>
+        </article>
+
+        
+        <article class="card-featured">
+          <div class="card-featured-body">
+            <h3>hutch 202</h3>
+            <p>a recreation of a studio at UW where i took acting classes in college.</p><br>
+            <div class="card-featured-links">
+              <a href=https://vrchat.com/home/world/wrld_59d6df23-d325-4494-bee0-2adb25d905ab/info">see on VRChat (unlisted) →</a>
+            </div>
+          </div>
+          <div class="card-featured-image hutch"></div>
+        </article>
+
+                
+        <article class="card-featured">
+          <div class="card-featured-body">
+            <h3>bugbear</h3>
+            <p>a multiplayer farming simulator for vrchat.</p><br>
+            <div class="card-featured-links">
+              <a href="https://vrchat.com/home/world/wrld_c35b9bf6-745d-424f-b270-6f0062d2a792">see on VRChat (unlisted) →</a>
+            </div>
+          </div>
+          <div class="card-featured-image bugbear"></div>
+        </article>
+                
+        <article class="card-featured">
+          <div class="card-featured-body">
+            <h3>kit city arena</h3>
+            <p>wave-based arena shooter for vrchat.</p><br>
+            <div class="card-featured-links">
+              <a href="https://vrchat.com/home/world/wrld_1074632d-6aec-4840-bd1a-94769a212a9a/info"">see on VRChat (unlisted) →</a>
+            </div>
+          </div>
+          <div class="card-featured-image kitcityarena"></div>
+        </article>
+      
+
+        <h2 class="lightheader">game archive</h2>
+
+        <a href="cfrpg/index.html">
           <section id="content-item" class="img-border cfrpg zoom-on-hover">
       			<h3>Craterside</h3>
-      			<p>A space western homesteading simulator.</p>
+      			<p>a space western homesteading simulator. this was my main project for like 5 years.</p>
       		</section id="content-item">
         </a>
-
-        <hr class="full lite">
-        <hr>
-        <hr class="full lite">
-
-        <h2 class="lightheader">game jams</h2>
 
         <a href="https://github.com/linuswaddell/battle-for-breckinridge-isle">
           <section id="content-item" class="img-border breckinridge zoom-on-hover">
       			<h3>Battle for Breckinridge Isle</h3>
-      			<p>A civil war-themed, 2-player strategy game built for a game jam at University of Washington.</p>
+      			<p>a 2-player strategy game built for a game jam at University of Washington.</p>
+      		</section id="content-item">
+        </a>
+
+        <a href="https://ieperen3039.itch.io/not-the-murderer">
+          <section id="content-item" class="img-border liliah zoom-on-hover">
+      			<h3>Liliah is not the murderer</h3>
+      			<p>visual novel made with a 6-person team for a game jam. 
+              i mainly implemented the branching narrative logic and dialogue system.</p>
       		</section id="content-item">
         </a>
 
         <a href="https://github.com/linuswaddell/unleaded">
           <section id="content-item" class="img-border unleaded zoom-on-hover">
       			<h3>Unleaded</h3>
-      			<p>A driving arcade game featuring a cargo van, made for Ludum Dare.</p>
+      			<p>a driving arcade game featuring a cargo van, made for Ludum Dare.</p>
       		</section id="content-item">
         </a>
 
         <a href="https://github.com/linuswaddell/pursuit-of-freedom">
           <section id="content-item" class="img-border pursuit-of-freedom zoom-on-hover">
       			<h3>Pursuit of Freedom</h3>
-      			<p>A game about escaping the borders of imperial space. Made for Ludum Dare.</p>
+      			<p>a game about escaping the borders of imperial space. Made for Ludum Dare.</p>
       		</section id="content-item">
         </a>
-
-        <a href="/morlandia/">
-    			<section id="content-item" class="img-border morlandia zoom-on-hover">
-    				<h3>MORLANDIA</h3>
-    				<p>A crude text-based RPG that was built in one day for Ludum Dare.</p>
-    			</section id="content-item">
-    		</a>
 
         <a href="https://github.com/linuswaddell/trees">
           <section id="content-item" class="img-border trees zoom-on-hover">
@@ -102,23 +220,17 @@
           </section id="content-item">
         </a>
 
-        <hr class="full lite">
-        <hr>
-        <hr class="full lite">
-
-        <h2 class="lightheader">abandoned</h2>
+        <a href="https://github.com/linuswaddell/pirates">
+          <section id="content-item" class="img-border pirates zoom-on-hover">
+      			<h3>PIRATES</h3>
+      			<p>The evolution of Unfected's codebase; a multiplayer pirate game.</p>
+      		</section id="content-item">
+        </a>
 
         <a href="https://github.com/linuswaddell/unfected">
       		<section id="content-item" class="img-border unfected zoom-on-hover">
       			<h3>UNFECTED</h3>
       			<p>A multiplayer survival game, modeled after Unturned.</p>
-      		</section id="content-item">
-        </a>
-
-        <a href="https://github.com/linuswaddell/pirates">
-          <section id="content-item" class="img-border pirates zoom-on-hover">
-      			<h3>PIRATES</h3>
-      			<p>The evolution of Unfected's codebase; a multiplayer pirate game.</p>
       		</section id="content-item">
         </a>
 
@@ -129,11 +241,17 @@
       		</section id="content-item">
         </a>
 
+        <a href="/morlandia/">
+    			<section id="content-item" class="img-border morlandia zoom-on-hover">
+    				<h3>MORLANDIA</h3>
+    				<p>a crude text-based RPG that was built in one day for Ludum Dare.</p>
+    			</section id="content-item">
+    		</a>
+
       </div>
 	</section>
-  <hr class="lite">
-  <hr>
-  <div class="footer lite"></div>
+  <div class="footer"></div>
 
+<script src="sparkles.js"></script>
 </body>
 </html>
